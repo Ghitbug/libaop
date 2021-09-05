@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+def depLibs=rootProject.ext.depsLibs
+android {
+    compileSdkVersion rootProject.android.compileSdkVersion
+    buildToolsVersion rootProject.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.android.minSdkVersion
+        targetSdkVersion rootProject.android.targetSdkVersion
+        versionCode rootProject.android.versionCode
+        versionName rootProject.android.versionName
+        //资源配置
+        sourceSets{
+            main{
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    compileOnly depLibs.appcompat
+    // AOP 插件库：https://mvnrepository.com/artifact/org.aspectj/aspectjrt
+    implementation 'org.aspectj:aspectjrt:1.9.6'
+    // 权限请求框架：https://github.com/getActivity/XXPermissions
+    api 'com.hjq:xxpermissions:8.2'
+
+}

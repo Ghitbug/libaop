@@ -19,7 +19,7 @@ public class CheckNetAspect {
     }
 
     @Pointcut("execution(@com.gh.libaop.CheckNet * *(..))")
-    public void method() {
+    private void method() {
     }
 
     @Around("method() && @annotation(checkNet)")

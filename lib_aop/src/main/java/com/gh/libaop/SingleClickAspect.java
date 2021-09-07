@@ -18,7 +18,7 @@ public class SingleClickAspect {
     }
 
     @Pointcut("execution(@com.gh.libaop.SingleClick * *(..))")
-    public void method() {
+    private void method() {
     }
 
     @Around("method() && @annotation(singleClick)")

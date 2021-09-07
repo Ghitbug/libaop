@@ -24,11 +24,11 @@ public class DebugLogAspect {
     }
 
     @Pointcut("execution(@com.gh.libaop.aop.DebugLog *.new(..))")
-    public void constructor() {
+    private void constructor() {
     }
 
     @Pointcut("execution(@com.gh.libaop.DebugLog * *(..))")
-    public void method() {
+    private void method() {
     }
 
     @Around("(method() || constructor()) && @annotation(debugLog)")

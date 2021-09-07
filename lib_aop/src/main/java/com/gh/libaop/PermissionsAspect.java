@@ -22,7 +22,7 @@ public class PermissionsAspect {
     }
 
     @Pointcut("execution(@com.gh.libaop.Permissions * *(..))")
-    public void method() {
+    private void method() {
     }
 
     @Around("method() && @annotation(permissions)")

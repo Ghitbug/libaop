@@ -1,19 +1,15 @@
 # libAOP
 
 allprojects {
-		repositories {
-    
-			maven { url 'https://jitpack.io' }
-			
-		}
+	repositories {
+		maven { url 'https://jitpack.io' }
 	}
+}
   
   
-  dependencies {
-  
-	        implementation 'com.github.Ghitbug:libAOP:V1.0.1'
-          
-	}
+dependencies {
+  	implementation 'com.github.Ghitbug:libAOP:V1.0.1'
+ }
   
 aspectjx {
         include "自己项目的包名", "com.gh.libaop"

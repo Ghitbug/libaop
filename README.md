@@ -1,5 +1,11 @@
 # libAOP
+项目的根gradle：
 
+dependencies {
+        
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10'
+ }
+ 
 allprojects {
 
 	repositories {
@@ -10,6 +16,9 @@ allprojects {
 	
 }
   
+moudle里面的配置：
+
+apply plugin: 'android-aspectjx'
   
 dependencies {
 

@@ -21,7 +21,7 @@ public class PermissionsAspect {
     public PermissionsAspect() {
     }
 
-    @Pointcut("execution(@com.wcy.app.lib.aop.Permissions * *(..))")
+    @Pointcut("execution(@com.gh.libaop.Permissions * *(..))")
     public void method() {
     }
 

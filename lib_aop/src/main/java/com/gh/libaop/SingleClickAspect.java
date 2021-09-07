@@ -17,7 +17,7 @@ public class SingleClickAspect {
     public SingleClickAspect() {
     }
 
-    @Pointcut("execution(@com.wcy.app.lib.aop.SingleClick * *(..))")
+    @Pointcut("execution(@com.gh.libaop.SingleClick * *(..))")
     public void method() {
     }
 

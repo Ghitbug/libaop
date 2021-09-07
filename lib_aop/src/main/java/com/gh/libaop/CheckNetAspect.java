@@ -18,7 +18,7 @@ public class CheckNetAspect {
     public CheckNetAspect() {
     }
 
-    @Pointcut("execution(@com.wcy.app.lib.aop.CheckNet * *(..))")
+    @Pointcut("execution(@com.gh.libaop.CheckNet * *(..))")
     public void method() {
     }
 

@@ -23,11 +23,11 @@ public class DebugLogAspect {
     public DebugLogAspect() {
     }
 
-    @Pointcut("execution(@com.wcy.app.lib.aop.DebugLog *.new(..))")
+    @Pointcut("execution(@com.gh.libaop.aop.DebugLog *.new(..))")
     public void constructor() {
     }
 
-    @Pointcut("execution(@com.wcy.app.lib.aop.DebugLog * *(..))")
+    @Pointcut("execution(@com.gh.libaop.DebugLog * *(..))")
     public void method() {
     }
 

@@ -26,3 +26,18 @@ aspectjx {
         exclude 'com.google', 'com.ut', 'rxhttp', 'com.squareup', 'org.apache', 'versions.9'
 	
 }
+
+权限用法：
+
+	@Permissions({RxPermissionsTool.PERMISSION_WRITE_EXTERNAL_STORAGE})
+	private void test(int position) { 
+	
+	}
+
+点击用法：
+
+	@SingleClick
+	private void test(int position) { 
+	
+	}
+     
